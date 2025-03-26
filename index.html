@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITIMKA</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <main id="home">
+      <!-- МЕНЮ -->
+      <header class="navbar relative container mx--auto text--white py--2">
+        <nav class="flex flex--row content--between">
+          <div>
+            <a href="#" class="logo pointer text--white text-weight--bold"
+              >PREDICT MAP</a
+            >
+          </div>
+          <div id="main-menu" class="flex flex--row">
+            <ul class="flex flex--row">
+              <li class="mx--2 list--none">
+                <a href="#about" class="text--white">О нас</a>
+              </li>
+              <li class="mx--2 list--none">
+                <a href="#map" class="text--white">Проект</a>
+              </li>
+              <li class="mx--2 list--none">
+                <a href="#baze" class="text--white">База знаний</a>
+              </li>
+              <li class="mx--2 list--none">
+                <a href="#blog" class="text--white">Плеер</a>
+              </li>
+            </ul>
+          </div>
+          <div id="btn-burger" class="btn-burger">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </div>
+        </nav>
+        <div
+          id="mobile-menu"
+          class="mobile-menu mt--3 absolute w--100 rounded none mobile-hide"
+        >
+          <ul>
+            <li class="mobile-items">
+              <a href="#about">О нас</a>
+            </li>
+            <li class="mobile-items">
+              <a href="#map">Проект</a>
+            </li>
+            <li class="mobile-items">
+              <a href="#baze">База знаний</a>
+            </li>
+            <li class="mobile-items">
+              <a href="#blog">Плеер</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero flex flex--row container mx--auto">
+        <div class="hero-img absolute w--100 h--100"></div>
+        <div class="hero-content my--auto text--white">
+          <h1 class="hero-title text--lg">
+            Мониторинг урожайности сельскохозяйственных растений
+          </h1>
+          <p class="hero-text mt--1 text--md">
+            Это решение для точного земледелия помогает принимать обоснованные
+            решения о внесении удобрений, орошении и защите растений,
+            способствуя устойчивому развитию сельского хозяйства, сокращая
+            использование ресурсов и повышая рентабельность.
+          </p>
+          <div class="flex flex--row gap--md mt--3">
+            <a
+              href="#map"
+              class="btn bg--white uppercase border border--white text--md text-weight--semibold flex flex--row align--center gap--sm"
+            >
+              Запустить Демо
+              <i class="bx bx-right-top-arrow-circle bx-sm"></i>
+            </a>
+            <button
+              class="btn bg--transparent uppercase border border--white text--md text--white text-weight--semibold"
+              onclick="location.href='https://t.me/+vo5QRMF2wggyMjNi'"
+            >
+              Узнать больше
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="relative py--5 flex flex--col">
+        <div class="container__ava">
+          <div
+            class="box box-1"
+            style="
+              --img: url(https://i.postimg.cc/x1Gm9Xb0/1b520e8b-cd46-4d06-8a38-541e2e13d729-1.jpg);
+            "
+            data-text="Антоний"
+          ></div>
+          <div
+            class="box box-2"
+            style="--img: url(https://i.postimg.cc/Kj2Cr7kG/te-GPv-Ca-PXIM.jpg)"
+            data-text="Денис"
+          ></div>
+          <div
+            class="box box-3"
+            style="--img: url(https://i.postimg.cc/7PzFJFxj/itimka.png)"
+            data-text="Команда ITимка"
+          ></div>
+          <div
+            class="box box-4"
+            style="
+              --img: url(https://i.postimg.cc/BQhwXfgQ/photo-2025-03-26-00-56-09.jpg);
+            "
+            data-text="Глеб"
+          ></div>
+          <div
+            class="box box-5"
+            style="--img: url(https://i.postimg.cc/WzrGrXtZ/CJHxsgnun-XU.jpg)"
+            data-text="Данил"
+          ></div>
+        </div>
+      </section>
+
+      <section id="map" class="relative py--5 flex flex--col">
+        <iframe
+          src="https://ee-makarius9204.projects.earthengine.app/view/predmap"
+          width="100%"
+          height="800px"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- ACTIVITIES -->
+      <section id="baze" class="relative py--5 flex flex--col">
+        <div class="filter"></div>
+        <h1 class="text--white text--center">База знаний</h1>
+        <div class="service-content container mt--3 mx--auto gap--lg">
+          <article class="flex flex--col gap--md w--100 pointer">
+            <img src="./assets/act-1.jpeg" class="service-img w--100 rounded" />
+            <div class="content-body">
+              <header class="text--white text--sl text-weight--bold">
+                РСМ Карта урожайности
+              </header>
+              <p class="text--white text-weight--light text--md">
+                Система позволяет оператору вести контроль собранного урожая и
+                оценивать его степень влажности
+              </p>
+            </div>
+            <footer>
+              <button
+                class="btn bg--white uppercase border border--white text--md text-weight--semibold flex flex--row align--center gap--sm"
+                onclick="location.href='https://rostselmash.com/electronic-systems/povysheniya-effektivnosti-kormouborochnykh-kombaynov/rsm-karta-urozhaynosti-kuk/'"
+              >
+                > Читать далее
+                <i class="bx bx-right-arrow-circle bx-sm"></i>
+              </button>
+            </footer>
+          </article>
+          <article class="flex flex--col gap--md w--100 pointer">
+            <img src="./assets/act-2.jpeg" class="service-img w--100 rounded" />
+            <div class="content-body">
+              <header class="text--white text--sl text-weight--bold">
+                КБ Панорама
+              </header>
+              <p class="text--white text-weight--light text--md">
+                Применение ГИС для обеспечения технологии «точного земледелия»
+              </p>
+            </div>
+            <footer>
+              <button
+                class="btn bg--white uppercase border border--white text--md text-weight--semibold flex flex--row align--center gap--sm"
+                onclick="location.href='https://gisinfo.ru/item/65.htm'"
+              >
+                Читать далее
+                <i class="bx bx-right-arrow-circle bx-sm"></i>
+              </button>
+            </footer>
+          </article>
+          <article class="flex flex--col gap--md w--100 pointer">
+            <img src="./assets/act-3.jpeg" class="service-img w--100 rounded" />
+            <div class="content-body">
+              <header class="text--white text--sl text-weight--bold">
+                Система мониторинга урожайности
+              </header>
+              <p class="text--white text-weight--light text--md">
+                Один из этапов технологии земледелия, позволяющий определить
+                результат работы от внедрения всех этапов.
+              </p>
+            </div>
+            <footer>
+              <button
+                class="btn bg--white uppercase border border--white text--md text-weight--semibold flex flex--row align--center gap--sm"
+                onclick="location.href='https://ttz.by/sistema-monitoringa-urozhajnosti/'"
+              >
+                Читать далее
+                <i class="bx bx-right-arrow-circle bx-sm"></i>
+              </button>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <section id="blog" class="section__video-gallery-container">
+        <div class="video-gallery-container">
+          <h2 class="title text--white text--center">Как это работает?</h2>
+          <div class="video-gallery">
+            <div class="featured-video">
+              <div class="responsive-iframe">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/3oZKM1_0ZZc?si=R2oKXygvmeLi_BxD"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <h3 class="video-title">
+                Python and Google Earth Engine in QGIS - QGIS GEE 02 | burdGIS
+              </h3>
+            </div>
+
+            <div class="all-videos">
+              <div class="video">
+                <img
+                  class="thumbnail"
+                  data-id="cJ3k45kbHOE"
+                  data-title="QGIS для совсем начинающих. Создание шейп-файлов."
+                  src="assets/thumbnail-1.jpeg"
+                  alt=""
+                />
+
+                <div class="play-icon">
+                  <img src="assets/play-icon.png" alt="" />
+                </div>
+              </div>
+
+              <div class="video">
+                <img
+                  class="thumbnail"
+                  data-id="w29FhgaCqzk"
+                  data-title="Функциональное зонирование в QGIS. Начало работы в программе QGIS
+                            "
+                  src="assets/thumbnail-2.jpeg"
+                  alt=""
+                />
+
+                <div class="play-icon">
+                  <img src="assets/play-icon.png" alt="" />
+                </div>
+              </div>
+
+              <div class="video">
+                <img
+                  class="thumbnail"
+                  data-id="QVv9kK4N5_I"
+                  data-title="Обзор программы QGIS. Начало работы в программе QGIS"
+                  src="assets/thumbnail-3.jpeg"
+                  alt=""
+                />
+
+                <div class="play-icon">
+                  <img src="assets/play-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg--primary py--4 relative">
+      <div class="container flex flex--col gap--lg mx--auto">
+        <div
+          class="footer-info flex flex--row content--between align--center gap--md"
+        >
+          <div>
+            <ul
+              class="flex flex--row content--center align--center gap--md list--none text--md"
+            >
+              <li class="pointer">
+                <a href="t.me/ITimkaCommunity" class="text--white">Telegram</a>
+              </li>
+              <li class="pointer">
+                <a href="vk.com/itimka.community" class="text--white">VK</a>
+              </li>
+            </ul>
+          </div>
+          <p class="text--center text--white text--md">
+            Created by
+            <a href="mailto:makar9204@ya.ru" class="text--white underline"
+              >ITIMKA</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
